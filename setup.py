@@ -9,11 +9,12 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='badcode',
+    name='buggycode',
     version='0.0.1',
-    packages=find_packages(include=['badcode', 'badcode.*']),
+    packages=find_packages(include=['buggycode', 'buggycode.*']),
     author="New Hire",
     install_requires=[
        "pytest",
+       "ipdb",
     ]
 )
