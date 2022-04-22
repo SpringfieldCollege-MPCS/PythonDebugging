@@ -9,14 +9,16 @@ def func1(list_of_names):
     return list_of_names  
 
 def func2(list_of_names):
+    greeting = "Hello, "
     for i, name in enumerate(list_of_names):
-        list_of_names[i] = "Hello, " + name
+        list_of_names[i] = greeting + name
     
     func3(list_of_names)
 
 def func3(list_of_names):
+    end_greeting = " How are you?"
     for i, name in enumerate(list_of_names):
-        list_of_names[i] = name + " How are you?"
+        list_of_names[i] = name + end_greeting
 
 
 def main():
