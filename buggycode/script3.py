@@ -31,8 +31,9 @@ def big_calc(a, b):
 def main():
     print("Attempting a big calc")
     a, b = 1, 2
+    import ipdb; ipdb.set_trace()
     value = big_calc(a, b)
-    print(f"Value of ((a + b) * (a / b))^2  is: {value}")
+    print(f"Value of (({a} + {b}) * ({a} / {b}))^2  is: {value}")
 
 
 if __name__ == "__main__":
