@@ -16,6 +16,7 @@ setup(
     install_requires=[
        "pytest",
        "ipdb",
-       "numpy"
+       "numpy",
+       "pygame"
     ]
 )
