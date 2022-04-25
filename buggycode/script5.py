@@ -12,9 +12,10 @@ def create_result_matrix_size(row, cols):
     return result
 
 
+# DEBUG THIS FUNCTION AND FIX IT
 def matrix_multiplication(X, Y):
-    # iterate through rows of X
     result = create_result_matrix_size(len(X), len(Y[0]))
+    # iterate through rows of X
     for i in range(len(X)):
         # iterate through columns of Y
         for j in range(len(Y)):
